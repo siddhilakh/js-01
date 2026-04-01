@@ -29,4 +29,30 @@ function loginUserMessage(username) { //loginUserMessage(username = "sam") // wi
 
 }
 //console.log(loginUserMessage("Siddhi"));
-console.log(loginUserMessage()); // if no value is passed then it returns undefined
+//console.log(loginUserMessage()); // if no value is passed then it returns undefined
+
+
+function calculateCartPrice(val1, val2, ...num1) { // -> used rest operator (...)
+    return num1                       // will return values except the ones stored in val1 and val2
+}
+//console.log(calculateCartPrice(200,300,400,500));  
+const user = {
+    username: "siddhi",
+    price: 199
+}
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+//handleObject(user)
+// handleObject ({
+//     username: "sam",
+//     price: 399
+// })
+
+const myNewArray = [200,300,400,500]
+function returnSecondValue (getArray) {
+    return getArray[0]
+}
+//console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([200,300,400,500]))
+
